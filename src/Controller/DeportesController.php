@@ -8,10 +8,14 @@
 
 namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
-
+use Symfony\Component\Routing\Annotation\Route;
 class DeportesController
 {
+    /**
+     * @Route("/")
+     */
     public function inicio(){
-        return new Response('Mi primera página en Symfony!');
+        return new Response('Mi primera página en Symfony con annotation!');
     }
+
 }
