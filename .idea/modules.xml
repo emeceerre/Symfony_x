@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Deportes_Symfony.iml" filepath="$PROJECT_DIR$/.idea/Deportes_Symfony.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cacharrear/.idea/cacharrear.iml" filepath="$PROJECT_DIR$/../cacharrear/.idea/cacharrear.iml" />
     </modules>
   </component>
 </project>

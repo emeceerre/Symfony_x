@@ -55,5 +55,9 @@
             "allow-contrib": false,
             "require": "4.2.*"
         }
+    },
+    "require-dev": {
+        "symfony/profiler-pack": "^1.0",
+        "symfony/web-server-bundle": "4.2.*"
     }
 }
