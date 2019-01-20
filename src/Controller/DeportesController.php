@@ -26,9 +26,11 @@ class DeportesController
     }
 
     /**
-     * @Route("/deportes/primer-articulo")
+     * @Route("/deportes/{slug}")
      */
-    public function mostrar(){
-        return new Response('Mi primera ruta Primer Artículo!');
+    public function mostrar($slug){
+        return new Response(sprintf('Mi artículo en mi página de deportes: ruta %s', $slug));
     }
+
+
 }
