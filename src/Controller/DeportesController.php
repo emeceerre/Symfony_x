@@ -35,7 +35,7 @@ class DeportesController
     /**
      * @Route("/deportes/{seccion}/{pagina}", name="lista_paginas", requirements={"pagina"="\d+"})
      */
-    public function lista($seccion, $pagina){
+    public function lista($seccion, $pagina=1){
         return new Response(sprintf('Deportes seccion: %s, listado de noticias página %s', $seccion, $pagina));
     }
 
