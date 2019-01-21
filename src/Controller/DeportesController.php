@@ -40,5 +40,37 @@ class DeportesController
         return new Response(sprintf('Deportes seccion: %s, listado de noticias página %s', $seccion, $pagina));
     }
 
+    /**
+     * @Route("/deportes/{seccion}/{slug}", defaults ={"seccion":"tenis"})
+     */
+    public function noticia($slug, $seccion){
+        return new Response(sprintf('Noticia de %s, con url dináimica=%s', $seccion, $slug));
+    }
+
+    /**
+     * @Route("/deportes/{_locale}/{fecha}/{seccion}/{equipo}/{pagina}",
+     *     defaults={"pagina":"1"},
+     *     requirements={"_locale": "es|en", "fecha": "[\d+]{8}", "pagina": "\d+"}
+     * )
+     */
+    public function rutaAvanzadaListado($_locale, $fecha, $seccion, $equipo, $pagina)
+    {
+        return new Response(sprintf('Listado de noticias en idioma=%s, fecha=%s, deporte=%s, equipo=%s, página=%s',
+            $_locale, $fecha, $seccion, $equipo, $pagina));
+    }
+
+    /**
+     * @Route("/deportes/{_locale}/{fecha}/{seccion}/{equipo}/{slug}.{_format}",
+     *     defaults = {"slug": "1", "_format":"html"},
+     *     requirements={ "_locale": "es|en",
+     *                    "_format": "html|json|xml",
+     *                    "fecha": "[\d+]{8}"
+     *     }
+     * )
+     */
+    public function rutaAvanzada($_locale, $fecha, $seccion, $equipo, $slug){
+        return new Response(sprintf('Mi noticia en idioma=%s, fecha=%s, deporte=%s, 
+        equipo=%s, noticia=%s', $_locale, $fecha, $seccion, $equipo, $slug));
+    }
 
 }
