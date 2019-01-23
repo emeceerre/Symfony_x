@@ -9,7 +9,8 @@
 namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-class DeportesController
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+class DeportesController extends Controller
 {
     /**
      * @Route("/")
@@ -30,14 +31,6 @@ class DeportesController
      */
     public function mostrar($slug){
         return new Response(sprintf('Mi artículo en mi página de deportes: ruta %s', $slug));
-    }
-
-    /**
-     * @Route("/deportes/{seccion}/{pagina}", name="lista_paginas", requirements={"pagina"="\d+",},
-     *     defaults={"seccion":"tenis"})
-     */
-    public function lista($seccion, $pagina=1){
-        return new Response(sprintf('Deportes seccion: %s, listado de noticias página %s', $seccion, $pagina));
     }
 
     /**
@@ -69,8 +62,30 @@ class DeportesController
      * )
      */
     public function rutaAvanzada($_locale, $fecha, $seccion, $equipo, $slug){
+        // Simulamos una base de datos de equipos o personas
+        $sports = ["valencia", "barcelona", "federer", "rafa-nadal"];
+
+        // Si el equipo o persona que buscamos no se encuentra, redirigimos al usuario a la página de inicio
+        if(!in_array($equipo,$sports)){
+            return $this->redirectToRoute('lista_paginas', array('seccion'=>$seccion,'page'=>"1"));
+        }
         return new Response(sprintf('Mi noticia en idioma=%s, fecha=%s, deporte=%s, 
         equipo=%s, noticia=%s', $_locale, $fecha, $seccion, $equipo, $slug));
     }
 
+    /**
+     * @Route("/deportes/{seccion}/{page}", name="lista_paginas",
+     *     requirements={"page"="\d+"},
+     *     defaults={"seccion":"tenis"})
+     */
+    public function lista($seccion, $page){
+        // Simulamos una base de datos de deportes
+        $sports = ["futbol", "tenis", "rugby"];
+
+        // Si el deporte que buscamos no se encuentra, lanzamos la excepcion 404 deporte no encontrado
+        if(!in_array($seccion, $sports)){
+            throw $this->createNotFoundException('Error 404 este deporte no está en nuestra Base de Datos');
+        }
+        return new Response(sprintf('Deportes seccion: %s, listado de noticias página: %s', $seccion, $page));
+    }
 }

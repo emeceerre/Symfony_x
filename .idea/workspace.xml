@@ -19,10 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/DeportesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+            <state relative-caret-position="246">
+              <caret line="40" column="5" selection-start-line="35" selection-start-column="3" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="e#114#160#0#PHP" expanded="true" />
+                <element signature="e#2252#2267#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,39 +102,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Deportes_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deportes_Symfony" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deportes_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deportes_Symfony" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deportes_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deportes_Symfony" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Deportes_Symfony" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Deportes_Symfony" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cacharrear" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
@@ -165,18 +140,20 @@
       <workItem from="1547975789779" duration="1442000" />
       <workItem from="1547977610247" duration="80000" />
       <workItem from="1547977733399" duration="1760000" />
-      <workItem from="1548058265036" duration="1177000" />
+      <workItem from="1548058265036" duration="1908000" />
+      <workItem from="1548062946946" duration="39000" />
+      <workItem from="1548259424870" duration="1853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8533000" />
+    <option name="totallyTimeSpent" value="11156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27237353" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24254215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -189,7 +166,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32859176" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32859176" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -228,10 +205,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/DeportesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+        <state relative-caret-position="246">
+          <caret line="40" column="5" selection-start-line="35" selection-start-column="3" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="e#114#160#0#PHP" expanded="true" />
+            <element signature="e#2252#2267#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
