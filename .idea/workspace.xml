@@ -19,11 +19,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/DeportesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="40" column="5" selection-start-line="35" selection-start-column="3" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="e#114#160#0#PHP" expanded="true" />
-                <element signature="e#2252#2267#1#PHP" expanded="true" />
+                <element signature="e#2369#2384#0#PHP" expanded="true" />
+                <element signature="e#3599#3616#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,8 +103,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,18 +143,19 @@
       <workItem from="1547977733399" duration="1760000" />
       <workItem from="1548058265036" duration="1908000" />
       <workItem from="1548062946946" duration="39000" />
-      <workItem from="1548259424870" duration="1853000" />
+      <workItem from="1548259424870" duration="5200000" />
+      <workItem from="1548267207269" duration="527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11156000" />
+    <option name="totallyTimeSpent" value="15030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24254215" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24708171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -205,11 +207,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/DeportesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="40" column="5" selection-start-line="35" selection-start-column="3" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="e#114#160#0#PHP" expanded="true" />
-            <element signature="e#2252#2267#1#PHP" expanded="true" />
+            <element signature="e#2369#2384#0#PHP" expanded="true" />
+            <element signature="e#3599#3616#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

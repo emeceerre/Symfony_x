@@ -10,6 +10,9 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
+
 class DeportesController extends Controller
 {
     /**
@@ -87,5 +90,24 @@ class DeportesController extends Controller
             throw $this->createNotFoundException('Error 404 este deporte no está en nuestra Base de Datos');
         }
         return new Response(sprintf('Deportes seccion: %s, listado de noticias página: %s', $seccion, $page));
+    }
+
+    /**
+     * @Route("/deportes/usuario", name="usuario")
+     */
+    public function sesionUsuario(Request $request){
+        $usuario_get = $request->query->get('nombre');
+        $session = $request->getSession();
+        $session->set('nombre', $usuario_get);
+        return $this->redirectToRoute('usuario_session', array('nombre'=>$usuario_get));
+    }
+
+    /**
+     * @Route("/deportes/usuario/{nombre}", name="usuario_session")
+     */
+    public function paginaUsuario(){
+        $session = new Session();
+        $usuario = $session->get('nombre');
+        return new Response(sprintf('Sesion iniciada con el atributo nombre: %s', $usuario));
     }
 }
