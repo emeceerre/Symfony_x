@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Noticias - {{ titulo }}{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+
+{% block body %}
+    <h1>{{ titulo }}</h1>
+    <div>
+        <ul>
+            {% for noticia in noticias %}
+                <li>{{ noticia.textoNoticia }} Fecha: {{ noticia.fecha }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
