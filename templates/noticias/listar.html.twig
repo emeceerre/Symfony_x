@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Noticias - {{ titulo }}{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
-</head>
+{% extends 'base.html.twig' %}
+{% block title %}Noticias - {{ titulo }}{% endblock %}
 
 {% block body %}
     <h1>{{ titulo }}</h1>
