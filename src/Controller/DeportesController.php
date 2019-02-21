@@ -29,7 +29,7 @@ class DeportesController extends Controller
      * @Route("/deportes")
      */
     public function deportes_inicio(){
-        return $this->render("base.html.twig");
+        return $this->render("base.html.twig", ['texto' => "Mi página de deportes!" ]);
     }
 
 //    /**
